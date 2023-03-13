@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Latihan Menu Utama : Aplikasi Menajemen Pegawai</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <!-- Header Menu Utama -->
+    <header>Aplikasi Menajemen Pegawai</header>
+    <!-- countainer -->
+    <div class="container">
+        <!-- sidebar -->
+        <aside>
+            <ul class="menu">
+                <li><a href="menu.html">Dasbord</a></li>
+                <li><a href="pegawai.html">Data Pegawai</a></li>
+                <li><a href="Jabatan.html">Data Jabatan</a></li>
+                <li><a href="">Keluar</a></li>
+            </ul>
+        </aside>
+        <!-- counten -->
+        <section class="main">
+            <h2 class="judul">Tambah Data Pegawai</h2>
+            <form action="" method="post">
+                <div class="form-group">
+                    <label for="Foto">Foto</label>
+                    <div class="input">
+                    <input type="file" id="Foto">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="Nama">Nama</label>
+                    <div class="input">
+                        <input type="text" id="Nama">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="jk">Jenis Kelamin</label>
+                    <input type="radio" id="jk" name="jk" value="P"/> Pria 
+                    <input type="radio" id="jk" name="jk" value="W"/> Wanita
+                </div>
+                <div class="form-group">
+                    <label for="nama">Tanggal</label>
+                    <div class="input">
+                        <input type="date" id="Tanggal">
+                        <div class="input">
+                            <input type="date" id="Tanggal">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="nama">Jabatan</label>
+                        <div class="input">
+                            <select name="Jabatan" id="jabatan">
+                                <option value="" selected>Pilih</option>
+                                <option value="Rektor">Rektor</option>
+                                <option value="WR">Wakil Rektor</option>
+                                <option value="DK">Dekan</option>
+                                <option value="WD">Wakil Dekan</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <input type="submit" value="Simpan" class="tombol simpan">
+                        <input type="reset" value="reset" class="tombol reset">
+                    </div>
+                </div>
+            </form>
+        </section>
+    </div>
+    <!-- footer -->
+    <footer>copyright &copy; Basecamp Informatika</footer>
+</body>
+
+</html>
